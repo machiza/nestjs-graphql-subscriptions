@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Order {
+  id: ID!
+  status: String!
+  total: Float!
+}
+
+type Query {
+  orders: [Order!]!
+}
+
+type Mutation {
+  updateOrder(id: String!, status: String!): Order!
+}
+
+type Subscription {
+  orderUpdated: Order!
+}
